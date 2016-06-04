@@ -1,0 +1,35 @@
+
+Clover EFI installer log - Sun Apr 24 02:39:54 PDT 2016
+Installer version: v2.3k r3465 EFI bootloader
+======================================================
+/dev/disk0 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *42.9 GB    disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS 未命名                  42.1 GB    disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     Apple_partition_scheme                        +38.3 MB    disk1
+   1:        Apple_partition_map                         32.3 KB    disk1s1
+   2:                  Apple_HFS Clover_v2.3k_r3465.pkg  38.2 MB    disk1s2
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *62.7 GB    disk2
+   1:                 DOS_FAT_32 EFI                     300.0 MB   disk2s1
+   2:                  Apple_HFS Install OS X El Capitan 6.5 GB     disk2s2
+======================================================
+Backing up EFI files
+
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/EFI
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/EFI
+Stage 2 - Written boot6 (x64) to /Volumes/EFI/boot
+
+Theme 'metal' (defined in config.plist) not found !
+Using default theme 'embedded'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
