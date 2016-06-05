@@ -12,62 +12,11 @@
 			<false/>
 			<key>Name</key>
 			<string>DSDT.aml</string>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Comment</key>
-					<string>Rename EHC2 to EH02</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename EHC1 to EH01</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename XHC1 to XHC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WEhDMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEhD
-					</data>
-				</dict>
-			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
 		<key>DropTables</key>
 		<array>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
@@ -77,6 +26,12 @@
 				<string>SSDT</string>
 				<key>TableId</key>
 				<string>CpuPm</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>Cpu0Ist</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -166,23 +121,39 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 30</string>
+				<string>trim</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g72M/v//EA==
+				QVBQTEUgU1NEAA==
 				</data>
 				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				g72M/v//Hw==
+				AAAAAAAAAAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>5g</string>
+				<string>10.11-BCM94352-Airport-Extreme</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				axAAAHUN
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				axAAAJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11-BCM94352-5GHz-US-FCC-dv</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -194,22 +165,6 @@
 				<key>Replace</key>
 				<data>
 				ZscGVVPrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>handoff</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
 				</data>
 			</dict>
 			<dict>
@@ -230,34 +185,50 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>ecc</string>
+				<string>Handoff Fix</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				cgoATWFjUHJvNCwxAE1hY1BybzUsMQBY
+				AADfAAAA
 				</data>
 				<key>Name</key>
-				<string>AppleTyMCEDriver</string>
+				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
 				<data>
-				cgoAAAAAAAAAAAAAAAAAAAAAAAAAAABY
+				AASqqmEA
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>trim</string>
+				<string>External icons patch</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				QVBQTEUgU1NEAA==
+				RXh0ZXJuYWw=
 				</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>AppleAHCIPort</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAA==
+				SW50ZXJuYWw=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in AppleUSBXHCIPCI</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g72M/v//EA==
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g72M/v//Gw==
 				</data>
 			</dict>
 			<dict>
@@ -276,18 +247,34 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>External icons patch</string>
+				<string>10.11-BT4LE-Handoff-Hotspot-lisai9093</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RXh0ZXJuYWw=
+				SIX/dEdIiwc=
 				</data>
 				<key>Name</key>
-				<string>AppleAHCIPort</string>
+				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
 				<data>
-				SW50ZXJuYWw=
+				Qb4PAAAA60Q=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>ecc</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				cgoATWFjUHJvNCwxAE1hY1BybzUsMQBY
+				</data>
+				<key>Name</key>
+				<string>AppleTyMCEDriver</string>
+				<key>Replace</key>
+				<data>
+				cgoAAAAAAAAAAAAAAAAAAAAAAAAAAABY
 				</data>
 			</dict>
 		</array>
@@ -327,6 +314,8 @@
 		<string>Mac Pro</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
 		<key>ProductName</key>
 		<string>MacPro6,1</string>
 		<key>SerialNumber</key>
