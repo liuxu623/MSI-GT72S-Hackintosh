@@ -5,13 +5,13 @@
  * 
  * Disassembling to non-symbolic legacy ASL operators
  *
- * Disassembly of iASLMOiDSU.aml, Sun Jun  5 13:43:08 2016
+ * Disassembly of iASL3xi4vw.aml, Sun Jul 24 10:23:50 2016
  *
  * Original Table Header:
  *     Signature        "DSDT"
- *     Length           0x00024282 (148098)
+ *     Length           0x00024298 (148120)
  *     Revision         0x02
- *     Checksum         0x8F
+ *     Checksum         0xD5
  *     OEM ID           "MSI_NB"
  *     OEM Table ID     "MEGABOOK"
  *     OEM Revision     0x01072009 (17244169)
@@ -9769,6 +9769,23 @@ DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x01072009)
                     SBBE,   8, 
                     SBBF,   8
                 }
+
+                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                {
+                    If (LEqual (Arg2, Zero))
+                    {
+                        Return (Buffer (One)
+                        {
+                             0x03                                           
+                        })
+                    }
+
+                    Return (Package (0x02)
+                    {
+                        "compatible", 
+                        "pci8086,9cc1"
+                    })
+                }
             }
         }
     }
@@ -11530,16 +11547,6 @@ DefinitionBlock ("", "DSDT", 2, "MSI_NB", "MEGABOOK", 0x01072009)
 
     Scope (_SB.PCI0.LPCB)
     {
-        Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
-        {
-            If (PCIC (Arg0))
-            {
-                Return (PCID (Arg0, Arg1, Arg2, Arg3))
-            }
-
-            Return (Zero)
-        }
-
         OperationRegion (LPC, PCI_Config, Zero, 0x0100)
         Field (LPC, AnyAcc, NoLock, Preserve)
         {
