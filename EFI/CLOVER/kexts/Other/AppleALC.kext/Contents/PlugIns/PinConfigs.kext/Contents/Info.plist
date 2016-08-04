@@ -1428,7 +1428,7 @@
 					<key>Comment</key>
 					<string>Custom ALC898 by Irving23 for MSI GT72S 6QF-065CN</string>
 					<key>ConfigData</key>
-					<data>ARcc8AEXHQABFx4AARcfQAEnHBABJx0BASceoAEnH5ABRxzwAUcdAAFHHgABRx9AAVcc8AFXHQABVx4AAVcfQAFnHPABZx0AAWceAAFnH0ABdxxgAXcdEAF3HgEBdx8BAYccEAGHHRABhx6hAYcfAQGXHEABlx0BAZceFwGXH5ABpxwgAacdEAGnHoEBpx8BAbccQAG3HQEBtx4XAbcfkAHHHPABxx0AAcceAAHHH0AB1xzwAdcdAAHXHgAB1x9AAecccAHnHREB5x5FAecfAQH3HPAB9x0AAfceAAH3H0ABRwwC</data>
+					<data>ARcc8AEXHQABFx4AARcfQAEnHBABJx0BASceoAEnH5ABRxzwAUcdAAFHHgABRx9AAVcc8AFXHQABVx4AAVcfQAFnHPABZx0AAWceAAFnH0ABdxxgAXcdEAF3HgEBdx8BAYccEAGHHRABhx6hAYcfAQGXHEABlx0BAZceEAGXH5ABpxwgAacdEAGnHoEBpx8BAbccQQG3HQEBtx4QAbcfkAHHHPABxx0AAcceAAHHH0AB1xzwAdcdAAHXHgAB1x9AAecccAHnHREB5x5FAecfAQH3HPAB9x0AAfceAAH3H0ABRwwC</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
@@ -1801,6 +1801,20 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>AwAAAA==</data>
+					<key>Codec</key>
+					<string>vusun123 - IDT 92HD90BXX</string>
+					<key>CodecID</key>
+					<integer>287143655</integer>
+					<key>ConfigData</key>
+					<data>AKccIACnHRAApx6BAKcfAAC3HBAAtx0QALceIQC3HwAA1xxAANcdAADXHhcA1x+QARccMAEXHQABFx6gARcf0A==</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>12</integer>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
