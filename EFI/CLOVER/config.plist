@@ -9,34 +9,7 @@
 			<key>Debug</key>
 			<false/>
 			<key>DropOEM_DSM</key>
-			<dict>
-				<key>ATI</key>
-				<false/>
-				<key>Firewire</key>
-				<false/>
-				<key>HDA</key>
-				<false/>
-				<key>HDMI</key>
-				<false/>
-				<key>IDE</key>
-				<false/>
-				<key>IntelGFX</key>
-				<false/>
-				<key>LAN</key>
-				<false/>
-				<key>LPC</key>
-				<false/>
-				<key>NVidia</key>
-				<true/>
-				<key>SATA</key>
-				<false/>
-				<key>SmBUS</key>
-				<false/>
-				<key>USB</key>
-				<false/>
-				<key>WIFI</key>
-				<false/>
-			</dict>
+			<false/>
 			<key>Fixes</key>
 			<dict>
 				<key>FixHDA_8000</key>
@@ -57,13 +30,13 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
 				<string>Cpu0Ist</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -77,9 +50,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nvda_drv=1 kext-dev-mode=1 slide=79</string>
+		<string>nvda_drv=1 kext-dev-mode=1 rootless=0 slide=79</string>
 		<key>Debug</key>
 		<false/>
+		<key>DefaultLoader</key>
+		<string>boot.efi</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -102,15 +77,13 @@
 		<dict>
 			<key>Inject</key>
 			<string>11</string>
-			<key>ResetHDA</key>
-			<true/>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>GUI</key>
@@ -147,16 +120,9 @@
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
-		<dict>
-			<key>ATI</key>
-			<false/>
-			<key>Intel</key>
-			<false/>
-			<key>NVidia</key>
-			<true/>
-		</dict>
+		<false/>
 		<key>NvidiaSingle</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -178,34 +144,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>5g</string>
+				<string>Skylake AppleAPIC Patch (c) Pike R. Alpha</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				QYP8/3QsSA==
+				wegQD7bw
 				</data>
 				<key>Name</key>
-				<string>AirPortBrcm4360</string>
+				<string>AppleAPIC</string>
 				<key>Replace</key>
 				<data>
-				ZscGVVPrKw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
+				vhcAAACQ
 				</data>
 			</dict>
 			<dict>
@@ -222,6 +172,22 @@
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIX/dEdIiwc=
+				</data>
+				<key>Name</key>
+				<string>IOBluetoothFamily</string>
+				<key>Replace</key>
+				<data>
+				Qb4PAAAA60Q=
 				</data>
 			</dict>
 		</array>
@@ -275,7 +241,7 @@
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
-		<true/>
+		<false/>
 	</dict>
 </dict>
 </plist>
