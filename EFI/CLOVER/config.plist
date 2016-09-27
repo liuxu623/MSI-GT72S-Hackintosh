@@ -26,17 +26,17 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
 				<string>Cpu0Ist</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>CpuPm</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -50,7 +50,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nvda_drv=1 kext-dev-mode=1 rootless=0 slide=79</string>
+		<string>nvda_drv=1 slide=79</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -77,6 +77,8 @@
 		<dict>
 			<key>Inject</key>
 			<string>11</string>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -144,6 +146,22 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>change 15 port limit to 30 in AppleUSBXHCIPCI</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				g72M/v//EA==
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g72M/v//Hw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Skylake AppleAPIC Patch (c) Pike R. Alpha</string>
 				<key>Disabled</key>
 				<false/>
@@ -156,38 +174,6 @@
 				<key>Replace</key>
 				<data>
 				vhcAAACQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>trim</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QVBQTEUgU1NEAA==
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
 				</data>
 			</dict>
 		</array>
@@ -206,31 +192,33 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>02/29/08</string>
+		<string>09/03/2013</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP31.88Z.006C.B05.0802291410</string>
+		<string>IM142.88Z.0118.B00.1309031249</string>
 		<key>Board-ID</key>
-		<string>Mac-F42C88C8</string>
+		<string>Mac-27ADBB7B4CEE8E61</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
-		<integer>11</integer>
+		<integer>10</integer>
 		<key>ChassisAssetTag</key>
-		<string>Pro-Enclosure</string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>06</string>
+		<string>13</string>
 		<key>Family</key>
-		<string>Mac Pro</string>
+		<string>iMac</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
 		<key>ProductName</key>
-		<string>MacPro3,1</string>
+		<string>iMac14,2</string>
 		<key>SerialNumber</key>
-		<string>G8815052XYL</string>
+		<string>C02LGE6UF8JC</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
@@ -241,7 +229,7 @@
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
-		<false/>
+		<true/>
 	</dict>
 </dict>
 </plist>
