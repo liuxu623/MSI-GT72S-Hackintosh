@@ -25,16 +25,18 @@
 			<string>DSDT.aml</string>
 			<key>ReuseFFFF</key>
 			<false/>
+			<key>SlpSmiAtWake</key>
+			<true/>
 		</dict>
 		<key>DropTables</key>
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
+				<string>DMAR</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
+				<string>#MCFG</string>
 			</dict>
 		</array>
 		<key>SSDT</key>
@@ -124,7 +126,14 @@
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
-		<false/>
+		<dict>
+			<key>ATI</key>
+			<false/>
+			<key>Intel</key>
+			<false/>
+			<key>NVidia</key>
+			<false/>
+		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
 	</dict>
@@ -148,98 +157,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>AirPortBrcm4360 Patch 2</string>
+				<string>AirPort Extreme</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				QQ+3zTnBdQw=
+				axAAAHUN
 				</data>
 				<key>Name</key>
 				<string>AirPortBrcm4360</string>
 				<key>Replace</key>
 				<data>
-				QQ+3zTnBZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#13</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				4b+AQBUGTYnWugAQAABFMQ==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				4b+AQBUGTYnWugACAABFMQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#15</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				Bf8PAABIwegMZvfB/w8PlQ==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				Bf8PAABIwegJZvfB/w8PlQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				D7aMiIIAAACD+QwPhTIBAA==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				D7aMiIIAAACD+QkPhTIBAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#12</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				yAAAAEkp17gAEAAATYskJA==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				yAAAAEkp17gAAgAATYskJA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#14</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				iWTY+EmBxAAQAABJgccA8A==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				iWTY+EmBxAACAABJgccA8A==
+				axAAAJCQ
 				</data>
 			</dict>
 			<dict>
@@ -262,50 +191,34 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#17</string>
+				<string>IONVMeFamily Pike R. Alpha Patch#14</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RYTJD5XAD7bAweAMRAnYRA==
+				iWTY+EmBxAAQAABJgccA8A==
 				</data>
 				<key>Name</key>
 				<string>IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
-				RYTJD5XAD7bAweAJRAnYRA==
+				iWTY+EmBxAACAABJgccA8A==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#6_7</string>
+				<string>IONVMeFamily Pike R. Alpha Patch#2</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				icGB4f8PAABIAdFIgfn/DwAAdzs=
+				D7aMiIIAAACD+QwPhTIBAA==
 				</data>
 				<key>Name</key>
 				<string>IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
-				icGB4f8BAABIAdFIgfn/AQAAdzs=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AirPortBrcm4360 Patch 1</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QTnEdRs=
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				QTnEZpA=
+				D7aMiIIAAACD+QkPhTIBAA==
 				</data>
 			</dict>
 			<dict>
@@ -326,50 +239,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#5</string>
+				<string>IONVMeFamily Pike R. Alpha Patch#12</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				hv8PAABIwegMD7cPgeH/Dw==
+				yAAAAEkp17gAEAAATYskJA==
 				</data>
 				<key>Name</key>
 				<string>IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
-				hv8PAABIwegJD7cPgeH/Dw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#1</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ibPwAgAAweAMBQAQAACJgw==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				ibPwAgAAweAJBQAQAACJgw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#8</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SYHF/w8AAEnB7QxJiwQkSA==
-				</data>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				SYHF/w8AAEnB7QlJiwQkSA==
+				yAAAAEkp17gAAgAATYskJA==
 				</data>
 			</dict>
 			<dict>
@@ -390,66 +271,50 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AirPort Extreme</string>
+				<string>IONVMeFamily Pike R. Alpha Patch#8</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				axAAAHUN
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				axAAAJCQ
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AirPortBrcm4360</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gflSqgAAdSk=
-				</data>
-				<key>Name</key>
-				<string>AirPortBrcm4360</string>
-				<key>Replace</key>
-				<data>
-				gflSqgAAZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#11</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AABJiY4iAQAAugAQAABIKQ==
+				SYHF/w8AAEnB7QxJiwQkSA==
 				</data>
 				<key>Name</key>
 				<string>IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
-				AABJiY4iAQAAugACAABIKQ==
+				SYHF/w8AAEnB7QlJiwQkSA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>AirPortBrcm4360 Patch 3</string>
+				<string>IONVMeFamily Pike R. Alpha Patch#6_7</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g33EBHQG
+				icGB4f8PAABIAdFIgfn/DwAAdzs=
 				</data>
 				<key>Name</key>
-				<string>AirPortBrcm4360</string>
+				<string>IONVMeFamily</string>
 				<key>Replace</key>
 				<data>
-				g33EBGaQ
+				icGB4f8BAABIAdFIgfn/AQAAdzs=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#1</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ibPwAgAAweAMBQAQAACJgw==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				ibPwAgAAweAJBQAQAACJgw==
 				</data>
 			</dict>
 			<dict>
@@ -470,6 +335,86 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#13</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				4b+AQBUGTYnWugAQAABFMQ==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				4b+AQBUGTYnWugACAABFMQ==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#17</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RYTJD5XAD7bAweAMRAnYRA==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				RYTJD5XAD7bAweAJRAnYRA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#11</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AABJiY4iAQAAugAQAABIKQ==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				AABJiY4iAQAAugACAABIKQ==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#5</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hv8PAABIwegMD7cPgeH/Dw==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				hv8PAABIwegJD7cPgeH/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AirPortBrcm4360</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gflSqgAAdSk=
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				gflSqgAAZpA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>IONVMeFamily IONameMatch</string>
 				<key>Disabled</key>
 				<false/>
@@ -486,6 +431,22 @@
 				PHN0cmluZz5wY2kxNDRkLGE4MDI8L3N0cmluZz4=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Patch#15</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				Bf8PAABIwegMZvfB/w8PlQ==
+				</data>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				Bf8PAABIwegJZvfB/w8PlQ==
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -497,10 +458,38 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>ProductName</key>
-		<string>MacBookAir6,2</string>
-		<key>Trust</key>
+		<key>BiosReleaseDate</key>
+		<string>04/11/2016</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>IM171.88Z.0105.B08.1604111319</string>
+		<key>Board-ID</key>
+		<string>Mac-B809C3757DA9BB8D</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>ChassisAssetTag</key>
+		<string>iMac-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>13</string>
+		<key>Family</key>
+		<string>iMac</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
+		<key>Mobile</key>
 		<true/>
+		<key>ProductName</key>
+		<string>iMac17,1</string>
+		<key>SerialNumber</key>
+		<string>C02QMNHKH2YQ</string>
+		<key>Trust</key>
+		<false/>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
