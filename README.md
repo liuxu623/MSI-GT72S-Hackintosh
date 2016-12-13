@@ -5,4 +5,4 @@
 * 有线网卡 killer e2400
 * 无线网卡 bcm94352z
 * 声卡 ALC898
-* SSD 闪迪 x400 1tb(m.2) 
+* SSD THNSN51T02DUK NVMe TOSHIBA 1024GB
