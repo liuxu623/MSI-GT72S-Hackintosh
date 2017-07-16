@@ -1,109 +1,104 @@
-2:970  0:638  Found UEFI Acpi 2.0 RSDP at 3F2CA000
-2:970  0:000  Saving ACPI tables from RSDP 3F2CA000 to EFI\CLOVER\ACPI\origin ...
-2:970  0:000   3F2CA000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
-2:991  0:020    (Xsdt: 3F2CA098, Rsdt: 3F2CA028)
-2:991  0:000    3F2CA098: 'XSDT', 'MEGABOOK', Rev: 1, Len: 180 -> XSDT.aml
-3:012  0:020    3F2CA028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 108 -> RSDT.aml
-3:032  0:020    Tables in Xsdt: 18
-3:032  0:000    0. 3F2EF868: 'FACP', 'MEGABOOK', Rev: 5, Len: 268 -> FACP.aml
-3:053  0:020        (Dsdt: 3F2CA1E8, Facs: 3F66DF80, XDsdt: 3F2CA1E8, XFacs: 0)
-3:053  0:000        3F2CA1E8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215 -> DSDT.aml
-3:085  0:032        3F66DF80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
-3:105  0:020    1. 3F2EF978: 'APIC', 'MEGABOOK', Rev: 3, Len: 188 -> APIC.aml
-3:144  0:038    2. 3F2EFA38: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68 -> FPDT.aml
-3:165  0:021    3. 3F2EFA80: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156 -> FIDT.aml
-3:187  0:021    4. 3F2EFB20: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60 -> MCFG.aml
-3:209  0:021    5. 3F2EFB60: 'HPET', 'MEGABOOK', Rev: 1, Len: 56 -> HPET.aml
-3:230  0:021    6. 3F2EFB98: 'LPIT', 'SKL', Rev: 1, Len: 148 -> LPIT.aml
-3:252  0:021    7. 3F2EFC30: 'SSDT', 'sensrhub', Rev: 2, Len: 584 -> SSDT-0.aml
-3:273  0:021    8. 3F2EFE78: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182 -> SSDT-1.aml
-3:300  0:026    9. 3F2F2A28: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
-3:322  0:022    10. 3F2F2A60: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
-3:345  0:022    11. 3F2F2AB8: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585 -> SSDT-2.aml
-3:368  0:022    12. 3F2F30F0: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374 -> SLIC.aml
-3:390  0:022    13. 3F2F3268: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293 -> SSDT-3.aml
-3:415  0:025    14. 3F2FA0F0: 'UEFI', '', Rev: 1, Len: 66 -> UEFI.aml
-3:438  0:022    15. 3F2FA138: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
- Found hidden SSDT 7 pcs
-3:438  0:000        * 3E481698: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1547  53 53 44 54 0B 06 00 00 02 B3 50 6D 52 65 66 00 Internal length = 1547 -> SSDT-5x.aml
-3:460  0:022        * 3E480618: 'SSDT', 'ApIst', Rev: 2, Len: 1450  53 53 44 54 AA 05 00 00 02 CE 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-6x.aml
-3:487  0:026        * 3E480C18: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 895  53 53 44 54 7F 03 00 00 02 65 50 6D 52 65 66 00 Internal length = 895 -> SSDT-7x.aml
-3:508  0:021        * 3EA87C18: 'SSDT', 'ApCst', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 EA 50 6D 52 65 66 00 Internal length = 281 -> SSDT-8x.aml
-3:530  0:021        * 3D041618: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 142  53 53 44 54 8E 00 00 00 02 2B 50 6D 52 65 66 00 Internal length = 142 -> SSDT-9x.aml
-3:551  0:021        * 3D1F7798: 'SSDT', 'ApHwp', Rev: 2, Len: 281  53 53 44 54 19 01 00 00 02 FD 50 6D 52 65 66 00 Internal length = 281 -> SSDT-10x.aml
-3:573  0:021        * 3D1F7618: 'SSDT', 'HwpLvt', Rev: 2, Len: 304  53 53 44 54 30 01 00 00 02 85 50 6D 52 65 66 00 Internal length = 304 -> SSDT-11x.aml
-3:594  0:021   -> SSDT-4.aml
-3:616  0:021    16. 3F2FAFB0: 'SSDT', 'PerfTune', Rev: 2, Len: 1912 -> SSDT-12.aml
-3:637  0:021    17. 3F2FB728: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56 -> BGRT.aml
-3:661  0:023    Tables in Rsdt: 18
-3:661  0:000    0. 3F2CA160: 'FACP', 'MEGABOOK', Rev: 2, Len: 132 -> RSDT-FACP.aml
-3:689  0:028        (Dsdt: 3F2CA1E8, Facs: 3F66DF40)
-3:689  0:000        3F2CA1E8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
-3:692  0:002        3F66DF40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
-3:714  0:021    1. 3F2EF978: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
-3:714  0:000    2. 3F2EFA38: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
-3:714  0:000    3. 3F2EFA80: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
-3:714  0:000    4. 3F2EFB20: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
-3:714  0:000    5. 3F2EFB60: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
-3:714  0:000    6. 3F2EFB98: 'LPIT', 'SKL', Rev: 1, Len: 148
-3:714  0:000    7. 3F2EFC30: 'SSDT', 'sensrhub', Rev: 2, Len: 584
-3:714  0:000    8. 3F2EFE78: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
-3:714  0:000    9. 3F2F2A28: 'DBGP', '', Rev: 1, Len: 52
-3:714  0:000    10. 3F2F2A60: 'DBG2', '', Rev: 0, Len: 84
-3:714  0:000    11. 3F2F2AB8: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
-3:714  0:000    12. 3F2F30F0: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
-3:714  0:000    13. 3F2F3268: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
-3:714  0:000    14. 3F2FA0F0: 'UEFI', '', Rev: 1, Len: 66
-3:714  0:000    15. 3F2FA138: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
-3:714  0:000    16. 3F2FAFB0: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
-3:714  0:000    17. 3F2FB728: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
-3:714  0:000  Found UEFI Acpi 1.0 RSDP at 3F2CA000
-3:714  0:000  Printing ACPI tables from RSDP 3F2CA000 ...
-3:714  0:000   3F2CA000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-3:714  0:000    (Xsdt: 3F2CA098, Rsdt: 3F2CA028)
-3:714  0:000    3F2CA098: 'XSDT', 'MEGABOOK', Rev: 1, Len: 180
-3:714  0:000    3F2CA028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 108
-3:714  0:000    Tables in Xsdt: 18
-3:714  0:000    0. 3F2EF868: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
-3:714  0:000        (Dsdt: 3F2CA1E8, Facs: 3F66DF80, XDsdt: 3F2CA1E8, XFacs: 0)
-3:714  0:000        3F2CA1E8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
-3:716  0:002        3F66DF80: 'FACS', Ver: 2, Len: 64
-3:716  0:000    1. 3F2EF978: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
-3:716  0:000    2. 3F2EFA38: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
-3:716  0:000    3. 3F2EFA80: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
-3:716  0:000    4. 3F2EFB20: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
-3:716  0:000    5. 3F2EFB60: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
-3:716  0:000    6. 3F2EFB98: 'LPIT', 'SKL', Rev: 1, Len: 148
-3:716  0:000    7. 3F2EFC30: 'SSDT', 'sensrhub', Rev: 2, Len: 584
-3:716  0:000    8. 3F2EFE78: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
-3:716  0:000    9. 3F2F2A28: 'DBGP', '', Rev: 1, Len: 52
-3:716  0:000    10. 3F2F2A60: 'DBG2', '', Rev: 0, Len: 84
-3:716  0:000    11. 3F2F2AB8: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
-3:716  0:000    12. 3F2F30F0: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
-3:716  0:000    13. 3F2F3268: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
-3:716  0:000    14. 3F2FA0F0: 'UEFI', '', Rev: 1, Len: 66
-3:716  0:000    15. 3F2FA138: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
-3:716  0:000    16. 3F2FAFB0: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
-3:716  0:000    17. 3F2FB728: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
-3:716  0:000    Tables in Rsdt: 18
-3:716  0:000    0. 3F2CA160: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
-3:716  0:000        (Dsdt: 3F2CA1E8, Facs: 3F66DF40)
-3:716  0:000        3F2CA1E8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
-3:719  0:002        3F66DF40: 'FACS', Ver: 0, Len: 64
-3:719  0:000    1. 3F2EF978: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
-3:719  0:000    2. 3F2EFA38: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
-3:719  0:000    3. 3F2EFA80: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
-3:719  0:000    4. 3F2EFB20: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
-3:719  0:000    5. 3F2EFB60: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
-3:719  0:000    6. 3F2EFB98: 'LPIT', 'SKL', Rev: 1, Len: 148
-3:719  0:000    7. 3F2EFC30: 'SSDT', 'sensrhub', Rev: 2, Len: 584
-3:719  0:000    8. 3F2EFE78: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
-3:719  0:000    9. 3F2F2A28: 'DBGP', '', Rev: 1, Len: 52
-3:719  0:000    10. 3F2F2A60: 'DBG2', '', Rev: 0, Len: 84
-3:719  0:000    11. 3F2F2AB8: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
-3:719  0:000    12. 3F2F30F0: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
-3:719  0:000    13. 3F2F3268: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
-3:719  0:000    14. 3F2FA0F0: 'UEFI', '', Rev: 1, Len: 66
-3:719  0:000    15. 3F2FA138: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
-3:719  0:000    16. 3F2FAFB0: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
-3:719  0:000    17. 3F2FB728: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+9:058  0:216  Found UEFI Acpi 2.0 RSDP at 3F5FB000
+9:058  0:000  Saving ACPI tables from RSDP 3F5FB000 to EFI\CLOVER\ACPI\origin ...
+9:058  0:000   3F5FB000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+9:058  0:000    (Xsdt: 3F5FB0A0, Rsdt: 3F5FB028)
+9:058  0:000    3F5FB0A0: 'XSDT', 'MEGABOOK', Rev: 1, Len: 188
+9:058  0:000    3F5FB028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 112
+9:058  0:000    Tables in Xsdt: 19
+9:058  0:000    0. 3F620870: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+9:058  0:000        (Dsdt: 3F5FB1F0, Facs: 3F66DF80, XDsdt: 3F5FB1F0, XFacs: 0)
+9:058  0:000        3F5FB1F0: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
+9:061  0:002        3F66DF80: 'FACS', Ver: 2, Len: 64
+9:061  0:000    1. 3F620980: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
+9:061  0:000    2. 3F620A40: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+9:061  0:000    3. 3F620A88: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+9:061  0:000    4. 3F620B28: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+9:061  0:000    5. 3F620B68: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+9:061  0:000    6. 3F620BA0: 'LPIT', 'SKL', Rev: 1, Len: 148
+9:061  0:000    7. 3F620C38: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+9:061  0:000    8. 3F620E80: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+9:061  0:000    9. 3F623A30: 'DBGP', '', Rev: 1, Len: 52
+9:061  0:000    10. 3F623A68: 'DBG2', '', Rev: 0, Len: 84
+9:061  0:000    11. 3F623AC0: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
+9:061  0:000    12. 3F6240F8: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+9:061  0:000    13. 3F624270: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
+9:061  0:000    14. 3F62B0F8: 'UEFI', '', Rev: 1, Len: 66
+9:061  0:000    15. 3F62B140: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+9:061  0:000    16. 3F62BFB8: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
+9:061  0:000    17. 3F62C730: 'DMAR', 'SKL ', Rev: 1, Len: 112
+9:061  0:000    18. 3F62C7A0: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+9:061  0:000    Tables in Rsdt: 19
+9:061  0:000    0. 3F5FB168: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+9:061  0:000        (Dsdt: 3F5FB1F0, Facs: 3F66DF40)
+9:061  0:000        3F5FB1F0: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
+9:063  0:002        3F66DF40: 'FACS', Ver: 0, Len: 64
+9:063  0:000    1. 3F620980: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
+9:063  0:000    2. 3F620A40: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+9:063  0:000    3. 3F620A88: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+9:063  0:000    4. 3F620B28: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+9:063  0:000    5. 3F620B68: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+9:063  0:000    6. 3F620BA0: 'LPIT', 'SKL', Rev: 1, Len: 148
+9:063  0:000    7. 3F620C38: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+9:063  0:000    8. 3F620E80: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+9:063  0:000    9. 3F623A30: 'DBGP', '', Rev: 1, Len: 52
+9:063  0:000    10. 3F623A68: 'DBG2', '', Rev: 0, Len: 84
+9:063  0:000    11. 3F623AC0: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
+9:063  0:000    12. 3F6240F8: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+9:063  0:000    13. 3F624270: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
+9:063  0:000    14. 3F62B0F8: 'UEFI', '', Rev: 1, Len: 66
+9:063  0:000    15. 3F62B140: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+9:063  0:000    16. 3F62BFB8: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
+9:063  0:000    17. 3F62C730: 'DMAR', 'SKL ', Rev: 1, Len: 112
+9:063  0:000    18. 3F62C7A0: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+9:063  0:000  Found UEFI Acpi 1.0 RSDP at 3F5FB000
+9:063  0:000  Printing ACPI tables from RSDP 3F5FB000 ...
+9:063  0:000   3F5FB000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+9:063  0:000    (Xsdt: 3F5FB0A0, Rsdt: 3F5FB028)
+9:063  0:000    3F5FB0A0: 'XSDT', 'MEGABOOK', Rev: 1, Len: 188
+9:063  0:000    3F5FB028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 112
+9:063  0:000    Tables in Xsdt: 19
+9:063  0:000    0. 3F620870: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+9:063  0:000        (Dsdt: 3F5FB1F0, Facs: 3F66DF80, XDsdt: 3F5FB1F0, XFacs: 0)
+9:063  0:000        3F5FB1F0: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
+9:065  0:002        3F66DF80: 'FACS', Ver: 2, Len: 64
+9:065  0:000    1. 3F620980: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
+9:065  0:000    2. 3F620A40: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+9:065  0:000    3. 3F620A88: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+9:065  0:000    4. 3F620B28: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+9:065  0:000    5. 3F620B68: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+9:065  0:000    6. 3F620BA0: 'LPIT', 'SKL', Rev: 1, Len: 148
+9:065  0:000    7. 3F620C38: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+9:065  0:000    8. 3F620E80: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+9:065  0:000    9. 3F623A30: 'DBGP', '', Rev: 1, Len: 52
+9:065  0:000    10. 3F623A68: 'DBG2', '', Rev: 0, Len: 84
+9:065  0:000    11. 3F623AC0: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
+9:065  0:000    12. 3F6240F8: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+9:065  0:000    13. 3F624270: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
+9:065  0:000    14. 3F62B0F8: 'UEFI', '', Rev: 1, Len: 66
+9:065  0:000    15. 3F62B140: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+9:065  0:000    16. 3F62BFB8: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
+9:065  0:000    17. 3F62C730: 'DMAR', 'SKL ', Rev: 1, Len: 112
+9:065  0:000    18. 3F62C7A0: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
+9:065  0:000    Tables in Rsdt: 19
+9:065  0:000    0. 3F5FB168: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+9:065  0:000        (Dsdt: 3F5FB1F0, Facs: 3F66DF40)
+9:065  0:000        3F5FB1F0: 'DSDT', 'MEGABOOK', Rev: 2, Len: 153215
+9:068  0:002        3F66DF40: 'FACS', Ver: 0, Len: 64
+9:068  0:000    1. 3F620980: 'APIC', 'MEGABOOK', Rev: 3, Len: 188
+9:068  0:000    2. 3F620A40: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+9:068  0:000    3. 3F620A88: 'FIDT', 'MEGABOOK', Rev: 1, Len: 156
+9:068  0:000    4. 3F620B28: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+9:068  0:000    5. 3F620B68: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+9:068  0:000    6. 3F620BA0: 'LPIT', 'SKL', Rev: 1, Len: 148
+9:068  0:000    7. 3F620C38: 'SSDT', 'sensrhub', Rev: 2, Len: 584
+9:068  0:000    8. 3F620E80: 'SSDT', 'PtidDevc', Rev: 2, Len: 11182
+9:068  0:000    9. 3F623A30: 'DBGP', '', Rev: 1, Len: 52
+9:068  0:000    10. 3F623A68: 'DBG2', '', Rev: 0, Len: 84
+9:068  0:000    11. 3F623AC0: 'SSDT', 'xh_rvp11', Rev: 2, Len: 1585
+9:068  0:000    12. 3F6240F8: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+9:068  0:000    13. 3F624270: 'SSDT', 'SaSsdt ', Rev: 2, Len: 28293
+9:068  0:000    14. 3F62B0F8: 'UEFI', '', Rev: 1, Len: 66
+9:068  0:000    15. 3F62B140: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3699
+9:068  0:000    16. 3F62BFB8: 'SSDT', 'PerfTune', Rev: 2, Len: 1912
+9:068  0:000    17. 3F62C730: 'DMAR', 'SKL ', Rev: 1, Len: 112
+9:068  0:000    18. 3F62C7A0: 'BGRT', 'MEGABOOK', Rev: 1, Len: 56
